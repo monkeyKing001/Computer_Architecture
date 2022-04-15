@@ -1,0 +1,15 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled Apr 14 2022 20:49:56
+gem5 started Apr 15 2022 12:32:49
+gem5 executing on monkeyking-VirtualBox
+command line: ./build/ARM/gem5.opt -re -d ca_project2 --stdout-file=sha_atomic_stdout.txt --stderr-file=sha_atomic_stderr.txt --stats-file=sha_atomic_stats.txt configs/example/se.py -c /home/monkeyking/ca_project2/mibench/security/sha/sha --cpu-type=atomic -o ./sha_50kbInput.asc
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+info: Entering event queue @ 0.  Starting simulation...
+info: Increasing stack size by one page.
+info: Increasing stack size by one page.
+68a7ca28 cc790a40 32f7deef c1776c07 e7b0738e
+Exiting @ tick 885432000 because target called exit()

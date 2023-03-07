@@ -1,0 +1,500 @@
+  84000: system.cpu.fetch: 84000/1/fetch/  mov   fp, #0
+  84000: system.cpu.fetch: 84000/2/fetch/  mov   lr, #0
+  84000: system.cpu.fetch: 84000/3/fetch/  ldr   r1, [sp] #4
+  84500: system.cpu.fetch: 84500/4/fetch/  addi_uop   sp, sp, #4
+  84500: system.cpu.fetch: 84500/5/fetch/  mov   r2, sp
+  85000: system.cpu.fetch: 85000/6/fetch/  str   r2, [sp, #-4]!
+  85000: system.cpu.fetch: 85000/7/fetch/  subi_uop   sp, sp, #4
+  85000: system.cpu.fetch: 85000/8/fetch/  str   r0, [sp, #-4]!
+  85500: system.cpu.fetch: 85500/9/fetch/  subi_uop   sp, sp, #4
+  85500: system.cpu.fetch: 85500/10/fetch/  ldr   r12, [pc, #16]
+  85500: system.cpu.fetch: 85500/11/fetch/  str   r12, [sp, #-4]!
+  85500: system.cpu.decode: 85500/1/decode
+  85500: system.cpu.decode: 85500/2/decode
+  85500: system.cpu.decode: 85500/3/decode
+  86000: system.cpu.fetch: 86000/12/fetch/  subi_uop   sp, sp, #4
+  86000: system.cpu.decode: 86000/4/decode
+  86000: system.cpu.decode: 86000/5/decode
+  86500: system.cpu.decode: 86500/6/decode
+  86500: system.cpu.decode: 86500/7/decode
+  86500: system.cpu.decode: 86500/8/decode
+  87000: system.cpu.decode: 87000/9/decode
+  87000: system.cpu.decode: 87000/10/decode
+  87000: system.cpu.decode: 87000/11/decode
+  87000: system.cpu.iew: 87000/1/issue
+  87000: system.cpu.iew: 87000/2/issue
+  87000: system.cpu.iew: 87000/3/issue
+  87500: system.cpu.decode: 87500/12/decode
+  87500: system.cpu.iew: 87500/4/issue
+  87500: system.cpu.iew: 87500/5/issue
+  87500: system.cpu.iew: 87500/1/execute(start)
+  87500: system.cpu.iew: 87500/2/execute(start)
+  87500: system.cpu.iew: 87500/1/writeback
+  87500: system.cpu.iew: 87500/2/writeback
+  88000: system.cpu.iew: 88000/6/issue
+  88000: system.cpu.iew: 88000/7/issue
+  88000: system.cpu.iew: 88000/8/issue
+  88000: system.cpu.iew: 88000/4/execute(start)
+  88000: system.cpu.iew: 88000/3/execute(start)
+  88000: system.cpu.iew: 88000/4/writeback
+  88500: system.cpu.iew: 88500/9/issue
+  88500: system.cpu.iew: 88500/10/issue
+  88500: system.cpu.iew: 88500/11/issue
+  88500: system.cpu.iew: 88500/5/execute(start)
+  88500: system.cpu.iew: 88500/7/execute(start)
+  88500: system.cpu.iew: 88500/5/writeback
+  88500: system.cpu.iew: 88500/7/writeback
+  88500: system.cpu.commit: 88500/1/commit
+  88500: system.cpu.commit: 88500/2/commit
+  89000: system.cpu.iew: 89000/12/issue
+  89000: system.cpu.iew: 89000/9/execute(start)
+  89000: system.cpu.iew: 89000/9/writeback
+  89500: system.cpu.iew: 89500/12/execute(start)
+  89500: system.cpu.iew: 89500/10/execute(start)
+  89500: system.cpu.iew: 89500/6/execute(start)
+  89500: system.cpu.iew: 89500/12/writeback
+  89500: system.cpu.iew: 89500/6/writeback
+  90000: system.cpu.iew: 90000/8/execute(start)
+  90000: system.cpu.iew: 90000/8/writeback
+ 149000: system.cpu.fetch: 149000/13/fetch/  ldr   r0, [pc, #12]
+ 149000: system.cpu.fetch: 149000/14/fetch/  ldr   r3, [pc, #12]
+ 149000: system.cpu.fetch: 149000/15/fetch/  bl   
+ 149500: system.cpu.fetch: 149500/16/fetch/  bl   
+ 149500: system.cpu.iew: 149500/10/writeback
+ 150000: system.cpu.fetch: 150000/17/fetch/unknown    (inst 0x200011ad4)
+ 150000: system.cpu.fetch: 150000/18/fetch/  andeq   r0, r1, r0, LSR #3
+ 150000: system.cpu.fetch: 150000/19/fetch/  andeq   r1, r1, r4, LSR r10
+ 150500: system.cpu.fetch: 150500/20/fetch/  ldr   r3, [pc, #20]
+ 150500: system.cpu.decode: 150500/13/decode
+ 150500: system.cpu.decode: 150500/14/decode
+ 150500: system.cpu.decode: 150500/15/decode
+ 150500: system.cpu.iew: 150500/11/execute(start)
+ 150500: system.cpu.iew: 150500/11/writeback
+ 152000: system.cpu.iew: 152000/13/issue
+ 152000: system.cpu.iew: 152000/14/issue
+ 152000: system.cpu.iew: 152000/15/issue
+ 152500: system.cpu.iew: 152500/15/execute(start)
+ 152500: system.cpu.iew: 152500/15/writeback
+ 153000: system.cpu.iew: 153000/13/execute(start)
+ 153500: system.cpu.iew: 153500/14/execute(start)
+ 154000: system.cpu.iew: 154000/13/writeback
+ 154500: system.cpu.iew: 154500/14/writeback
+ 165500: system.cpu.iew: 165500/3/writeback
+ 166500: system.cpu.commit: 166500/3/commit
+ 166500: system.cpu.commit: 166500/4/commit
+ 166500: system.cpu.commit: 166500/5/commit
+ 166500: system.cpu.commit: 166500/6/commit
+ 166500: system.cpu.commit: 166500/7/commit
+ 166500: system.cpu.commit: 166500/8/commit
+ 166500: system.cpu.commit: 166500/9/commit
+ 166500: system.cpu.commit: 166500/10/commit
+ 167000: system.cpu.commit: 167000/11/commit
+ 167000: system.cpu.commit: 167000/12/commit
+ 167000: system.cpu.commit: 167000/13/commit
+ 167000: system.cpu.commit: 167000/14/commit
+ 167000: system.cpu.commit: 167000/15/commit
+ 215000: system.cpu.fetch: 215000/21/fetch/  ldr   r12, [pc, #800]
+ 215500: system.cpu.fetch: 215500/22/fetch/  mov   r4, r3
+ 215500: system.cpu.fetch: 215500/23/fetch/  cmps   r12, #0
+ 215500: system.cpu.fetch: 215500/24/fetch/  ldrne   r3, [r12, #0]
+ 216000: system.cpu.fetch: 216000/25/fetch/  moveq   r3, r12
+ 216500: system.cpu.fetch: 216500/26/fetch/  clzne   r3, r3
+ 216500: system.cpu.fetch: 216500/27/fetch/  str_uop   r7, [sp, #8]
+ 216500: system.cpu.fetch: 216500/28/fetch/  str_uop   lr, [sp, #4]
+ 216500: system.cpu.decode: 216500/21/decode
+ 217000: system.cpu.fetch: 217000/29/fetch/  subi_uop   sp, sp, #8
+ 217000: system.cpu.fetch: 217000/30/fetch/  sub   sp, sp, #296
+ 217000: system.cpu.fetch: 217000/31/fetch/  str_uop   r1, [sp, #4]
+ 217000: system.cpu.decode: 217000/22/decode
+ 217000: system.cpu.decode: 217000/23/decode
+ 217000: system.cpu.decode: 217000/24/decode
+ 217500: system.cpu.fetch: 217500/32/fetch/  str_uop   r2, [sp, #8]
+ 217500: system.cpu.decode: 217500/25/decode
+ 218000: system.cpu.decode: 218000/26/decode
+ 218000: system.cpu.decode: 218000/27/decode
+ 218000: system.cpu.decode: 218000/28/decode
+ 218000: system.cpu.iew: 218000/21/issue
+ 218500: system.cpu.decode: 218500/29/decode
+ 218500: system.cpu.decode: 218500/30/decode
+ 218500: system.cpu.decode: 218500/31/decode
+ 218500: system.cpu.iew: 218500/22/issue
+ 218500: system.cpu.iew: 218500/23/issue
+ 218500: system.cpu.iew: 218500/24/issue
+ 219000: system.cpu.decode: 219000/32/decode
+ 219000: system.cpu.iew: 219000/25/issue
+ 219000: system.cpu.iew: 219000/22/execute(start)
+ 219000: system.cpu.iew: 219000/21/execute(start)
+ 219000: system.cpu.iew: 219000/22/writeback
+ 219500: system.cpu.iew: 219500/26/issue
+ 219500: system.cpu.iew: 219500/27/issue
+ 219500: system.cpu.iew: 219500/28/issue
+ 220000: system.cpu.iew: 220000/29/issue
+ 220000: system.cpu.iew: 220000/30/issue
+ 220000: system.cpu.iew: 220000/31/issue
+ 220500: system.cpu.iew: 220500/32/issue
+ 220500: system.cpu.iew: 220500/29/execute(start)
+ 220500: system.cpu.iew: 220500/27/execute(start)
+ 220500: system.cpu.iew: 220500/29/writeback
+ 220500: system.cpu.iew: 220500/27/writeback
+ 221000: system.cpu.iew: 221000/30/execute(start)
+ 221000: system.cpu.iew: 221000/28/execute(start)
+ 221000: system.cpu.iew: 221000/30/writeback
+ 221000: system.cpu.iew: 221000/28/writeback
+ 222000: system.cpu.iew: 222000/31/execute(start)
+ 222000: system.cpu.iew: 222000/31/writeback
+ 222500: system.cpu.iew: 222500/32/execute(start)
+ 222500: system.cpu.iew: 222500/32/writeback
+ 281000: system.cpu.fetch: 281000/33/fetch/  ldr   r2, [sp, #4]
+ 281000: system.cpu.fetch: 281000/34/fetch/  ldr   lr, [sp, #8]
+ 281000: system.cpu.fetch: 281000/35/fetch/  str   r0, [sp, #12]
+ 281500: system.cpu.fetch: 281500/36/fetch/  add   r0, r2, #1
+ 282000: system.cpu.fetch: 282000/37/fetch/  ldr   r2, [pc, #752]
+ 282000: system.cpu.fetch: 282000/38/fetch/  add   r0, lr, r0, LSL #2
+ 282000: system.cpu.fetch: 282000/39/fetch/  str   r0, [r2, #0]
+ 282500: system.cpu.fetch: 282500/40/fetch/  ldr   r1, [sp, #312]
+ 282500: system.cpu.decode: 282500/33/decode
+ 282500: system.cpu.decode: 282500/34/decode
+ 282500: system.cpu.decode: 282500/35/decode
+ 283000: system.cpu.fetch: 283000/41/fetch/  ldr   r12, [pc, #740]
+ 283000: system.cpu.fetch: 283000/42/fetch/  ldr   r2, [pc, #740]
+ 283000: system.cpu.fetch: 283000/43/fetch/  movne   r3, r3, LSR #5
+ 283000: system.cpu.decode: 283000/36/decode
+ 283500: system.cpu.fetch: 283500/44/fetch/  str   r3, [r12, #0]
+ 283500: system.cpu.decode: 283500/37/decode
+ 283500: system.cpu.decode: 283500/38/decode
+ 283500: system.cpu.decode: 283500/39/decode
+ 284000: system.cpu.fetch: 284000/45/fetch/  str   r1, [r2, #0]
+ 284000: system.cpu.fetch: 284000/46/fetch/  ldr   r3, [r0] #4
+ 284000: system.cpu.fetch: 284000/47/fetch/  addi_uop   r0, r0, #4
+ 284000: system.cpu.decode: 284000/40/decode
+ 284000: system.cpu.iew: 284000/33/issue
+ 284000: system.cpu.iew: 284000/34/issue
+ 284000: system.cpu.iew: 284000/35/issue
+ 284500: system.cpu.fetch: 284500/48/fetch/  cmps   r3, #0
+ 284500: system.cpu.fetch: 284500/49/fetch/  bne   
+ 284500: system.cpu.decode: 284500/41/decode
+ 284500: system.cpu.decode: 284500/42/decode
+ 284500: system.cpu.decode: 284500/43/decode
+ 284500: system.cpu.iew: 284500/36/issue
+ 285000: system.cpu.decode: 285000/44/decode
+ 285000: system.cpu.iew: 285000/37/issue
+ 285000: system.cpu.iew: 285000/38/issue
+ 285000: system.cpu.iew: 285000/39/issue
+ 285000: system.cpu.iew: 285000/35/execute(start)
+ 285000: system.cpu.iew: 285000/33/execute(start)
+ 285000: system.cpu.iew: 285000/35/writeback
+ 285500: system.cpu.decode: 285500/45/decode
+ 285500: system.cpu.decode: 285500/46/decode
+ 285500: system.cpu.decode: 285500/47/decode
+ 285500: system.cpu.iew: 285500/40/issue
+ 285500: system.cpu.iew: 285500/34/execute(start)
+ 285500: system.cpu.iew: 285500/33/writeback
+ 285500: system.cpu.iew: 285500/21/writeback
+ 286000: system.cpu.decode: 286000/48/decode
+ 286000: system.cpu.decode: 286000/49/decode
+ 286000: system.cpu.iew: 286000/41/issue
+ 286000: system.cpu.iew: 286000/42/issue
+ 286000: system.cpu.iew: 286000/43/issue
+ 286000: system.cpu.iew: 286000/23/execute(start)
+ 286000: system.cpu.iew: 286000/36/execute(start)
+ 286000: system.cpu.iew: 286000/37/execute(start)
+ 286000: system.cpu.iew: 286000/34/writeback
+ 286000: system.cpu.iew: 286000/23/writeback
+ 286000: system.cpu.iew: 286000/36/writeback
+ 286500: system.cpu.iew: 286500/44/issue
+ 286500: system.cpu.iew: 286500/38/execute(start)
+ 286500: system.cpu.iew: 286500/40/execute(start)
+ 286500: system.cpu.iew: 286500/38/writeback
+ 286500: system.cpu.commit: 286500/21/commit
+ 286500: system.cpu.commit: 286500/22/commit
+ 287000: system.cpu.iew: 287000/45/issue
+ 287000: system.cpu.iew: 287000/46/issue
+ 287000: system.cpu.iew: 287000/47/issue
+ 287000: system.cpu.iew: 287000/24/execute(start)
+ 287000: system.cpu.iew: 287000/37/writeback
+ 287000: system.cpu.iew: 287000/24/writeback
+ 287000: system.cpu.commit: 287000/23/commit
+ 287500: system.cpu.iew: 287500/48/issue
+ 287500: system.cpu.iew: 287500/49/issue
+ 287500: system.cpu.iew: 287500/25/execute(start)
+ 287500: system.cpu.iew: 287500/47/execute(start)
+ 287500: system.cpu.iew: 287500/41/execute(start)
+ 287500: system.cpu.iew: 287500/40/writeback
+ 287500: system.cpu.iew: 287500/25/writeback
+ 287500: system.cpu.iew: 287500/47/writeback
+ 288000: system.cpu.iew: 288000/26/execute(start)
+ 288000: system.cpu.iew: 288000/42/execute(start)
+ 288000: system.cpu.iew: 288000/39/execute(start)
+ 288000: system.cpu.iew: 288000/26/writeback
+ 288000: system.cpu.iew: 288000/39/writeback
+ 288000: system.cpu.commit: 288000/24/commit
+ 288500: system.cpu.iew: 288500/43/execute(start)
+ 288500: system.cpu.iew: 288500/46/execute(start)
+ 288500: system.cpu.iew: 288500/41/writeback
+ 288500: system.cpu.iew: 288500/43/writeback
+ 288500: system.cpu.commit: 288500/25/commit
+ 289000: system.cpu.iew: 289000/42/writeback
+ 289000: system.cpu.commit: 289000/26/commit
+ 289000: system.cpu.commit: 289000/27/commit
+ 289000: system.cpu.commit: 289000/28/commit
+ 289000: system.cpu.commit: 289000/29/commit
+ 289000: system.cpu.commit: 289000/30/commit
+ 289000: system.cpu.commit: 289000/31/commit
+ 289000: system.cpu.commit: 289000/32/commit
+ 289000: system.cpu.commit: 289000/33/commit
+ 289500: system.cpu.iew: 289500/44/execute(start)
+ 289500: system.cpu.iew: 289500/46/writeback
+ 289500: system.cpu.iew: 289500/44/writeback
+ 289500: system.cpu.commit: 289500/34/commit
+ 289500: system.cpu.commit: 289500/35/commit
+ 289500: system.cpu.commit: 289500/36/commit
+ 289500: system.cpu.commit: 289500/37/commit
+ 289500: system.cpu.commit: 289500/38/commit
+ 289500: system.cpu.commit: 289500/39/commit
+ 289500: system.cpu.commit: 289500/40/commit
+ 289500: system.cpu.commit: 289500/41/commit
+ 290000: system.cpu.iew: 290000/48/execute(start)
+ 290000: system.cpu.iew: 290000/45/execute(start)
+ 290000: system.cpu.iew: 290000/48/writeback
+ 290000: system.cpu.iew: 290000/45/writeback
+ 290000: system.cpu.commit: 290000/42/commit
+ 290000: system.cpu.commit: 290000/43/commit
+ 290500: system.cpu.iew: 290500/49/execute(start)
+ 290500: system.cpu.iew: 290500/49/writeback
+ 290500: system.cpu.commit: 290500/44/commit
+ 291000: system.cpu.commit: 291000/45/commit
+ 291000: system.cpu.commit: 291000/46/commit
+ 291000: system.cpu.commit: 291000/47/commit
+ 291000: system.cpu.commit: 291000/48/commit
+ 291500: system.cpu.commit: 291500/49/commit
+ 348000: system.cpu.fetch: 348000/50/fetch/  bl   
+ 348000: system.cpu.fetch: 348000/51/fetch/  ldr   r3, [pc, #712]
+ 348000: system.cpu.fetch: 348000/52/fetch/  ldr   r2, [pc, #712]
+ 348500: system.cpu.fetch: 348500/53/fetch/  ldr   r3, [r3, #0]
+ 349000: system.cpu.fetch: 349000/54/fetch/  cmps   r2, #0
+ 349000: system.cpu.fetch: 349000/55/fetch/  clz   r3, r3
+ 349000: system.cpu.fetch: 349000/56/fetch/  mov   r1, #1
+ 349500: system.cpu.fetch: 349500/57/fetch/  moveq   r1, r2
+ 349500: system.cpu.decode: 349500/50/decode
+ 351000: system.cpu.iew: 351000/50/issue
+ 351500: system.cpu.iew: 351500/50/execute(start)
+ 351500: system.cpu.iew: 351500/50/writeback
+ 352500: system.cpu.commit: 352500/50/commit
+ 427000: system.cpu.fetch: 427000/58/fetch/  ldr   r3, [r0, #0]
+ 427000: system.cpu.fetch: 427000/59/fetch/  ldr   r2, [pc, #1184]
+ 427000: system.cpu.fetch: 427000/60/fetch/  cmps   r3, #0
+ 427500: system.cpu.fetch: 427500/61/fetch/  str   r0, [r2, #0]
+ 428000: system.cpu.fetch: 428000/62/fetch/  bxeq   
+ 428000: system.cpu.fetch: 428000/63/fetch/  mov   r2, #0
+ 428000: system.cpu.fetch: 428000/64/fetch/  str_uop   r4, [sp, #36]
+ 428500: system.cpu.fetch: 428500/65/fetch/  str_uop   r5, [sp, #32]
+ 428500: system.cpu.fetch: 428500/66/fetch/  str_uop   r6, [sp, #28]
+ 428500: system.cpu.fetch: 428500/67/fetch/  str_uop   r7, [sp, #24]
+ 428500: system.cpu.decode: 428500/58/decode
+ 428500: system.cpu.decode: 428500/59/decode
+ 428500: system.cpu.decode: 428500/60/decode
+ 429000: system.cpu.fetch: 429000/68/fetch/  str_uop   r8, [sp, #20]
+ 429000: system.cpu.fetch: 429000/69/fetch/  str_uop   r9, [sp, #16]
+ 429000: system.cpu.fetch: 429000/70/fetch/  str_uop   r10, [sp, #12]
+ 429000: system.cpu.decode: 429000/61/decode
+ 429500: system.cpu.fetch: 429500/71/fetch/  str_uop   fp, [sp, #8]
+ 429500: system.cpu.fetch: 429500/72/fetch/  str_uop   lr, [sp, #4]
+ 429500: system.cpu.fetch: 429500/73/fetch/  subi_uop   sp, sp, #36
+ 429500: system.cpu.decode: 429500/62/decode
+ 429500: system.cpu.decode: 429500/63/decode
+ 429500: system.cpu.decode: 429500/64/decode
+ 430000: system.cpu.fetch: 430000/74/fetch/  ldr   r9, [pc, #1164]
+ 430000: system.cpu.decode: 430000/65/decode
+ 430000: system.cpu.decode: 430000/66/decode
+ 430000: system.cpu.decode: 430000/67/decode
+ 430000: system.cpu.iew: 430000/58/issue
+ 430000: system.cpu.iew: 430000/59/issue
+ 430000: system.cpu.iew: 430000/60/issue
+ 430500: system.cpu.fetch: 430500/75/fetch/  ldr   r1, [pc, #1164]
+ 430500: system.cpu.fetch: 430500/76/fetch/  ldr   r9, [r9, #0]
+ 430500: system.cpu.fetch: 430500/77/fetch/  sub   sp, sp, #100
+ 430500: system.cpu.decode: 430500/68/decode
+ 430500: system.cpu.decode: 430500/69/decode
+ 430500: system.cpu.decode: 430500/70/decode
+ 430500: system.cpu.iew: 430500/61/issue
+ 431000: system.cpu.fetch: 431000/78/fetch/  str   r9, [sp, #56]
+ 431000: system.cpu.decode: 431000/71/decode
+ 431000: system.cpu.decode: 431000/72/decode
+ 431000: system.cpu.decode: 431000/73/decode
+ 431000: system.cpu.iew: 431000/62/issue
+ 431000: system.cpu.iew: 431000/63/issue
+ 431000: system.cpu.iew: 431000/64/issue
+ 431000: system.cpu.iew: 431000/58/execute(start)
+ 431500: system.cpu.fetch: 431500/79/fetch/  ldr   r9, [r1, #0]
+ 431500: system.cpu.fetch: 431500/80/fetch/  mov   r8, r2
+ 431500: system.cpu.fetch: 431500/81/fetch/  str   r9, [sp, #88]
+ 431500: system.cpu.decode: 431500/74/decode
+ 431500: system.cpu.iew: 431500/65/issue
+ 431500: system.cpu.iew: 431500/66/issue
+ 431500: system.cpu.iew: 431500/67/issue
+ 431500: system.cpu.iew: 431500/63/execute(start)
+ 431500: system.cpu.iew: 431500/59/execute(start)
+ 431500: system.cpu.iew: 431500/63/writeback
+ 432000: system.cpu.fetch: 432000/82/fetch/  ldr   r9, [r1, #4]
+ 432000: system.cpu.decode: 432000/75/decode
+ 432000: system.cpu.decode: 432000/76/decode
+ 432000: system.cpu.decode: 432000/77/decode
+ 432000: system.cpu.iew: 432000/68/issue
+ 432000: system.cpu.iew: 432000/69/issue
+ 432000: system.cpu.iew: 432000/70/issue
+ 432000: system.cpu.iew: 432000/64/execute(start)
+ 432000: system.cpu.iew: 432000/58/writeback
+ 432000: system.cpu.iew: 432000/64/writeback
+ 432500: system.cpu.decode: 432500/78/decode
+ 432500: system.cpu.iew: 432500/71/issue
+ 432500: system.cpu.iew: 432500/72/issue
+ 432500: system.cpu.iew: 432500/73/issue
+ 432500: system.cpu.iew: 432500/60/execute(start)
+ 432500: system.cpu.iew: 432500/65/execute(start)
+ 432500: system.cpu.iew: 432500/60/writeback
+ 432500: system.cpu.iew: 432500/65/writeback
+ 433000: system.cpu.decode: 433000/79/decode
+ 433000: system.cpu.decode: 433000/80/decode
+ 433000: system.cpu.decode: 433000/81/decode
+ 433000: system.cpu.iew: 433000/74/issue
+ 433000: system.cpu.iew: 433000/62/execute(start)
+ 433000: system.cpu.iew: 433000/73/execute(start)
+ 433000: system.cpu.iew: 433000/66/execute(start)
+ 433000: system.cpu.iew: 433000/62/writeback
+ 433000: system.cpu.iew: 433000/73/writeback
+ 433000: system.cpu.iew: 433000/66/writeback
+ 433000: system.cpu.commit: 433000/58/commit
+ 433500: system.cpu.decode: 433500/82/decode
+ 433500: system.cpu.iew: 433500/75/issue
+ 433500: system.cpu.iew: 433500/76/issue
+ 433500: system.cpu.iew: 433500/77/issue
+ 433500: system.cpu.iew: 433500/67/execute(start)
+ 433500: system.cpu.iew: 433500/67/writeback
+ 434000: system.cpu.iew: 434000/78/issue
+ 434000: system.cpu.iew: 434000/77/execute(start)
+ 434000: system.cpu.iew: 434000/74/execute(start)
+ 434000: system.cpu.iew: 434000/68/execute(start)
+ 434000: system.cpu.iew: 434000/77/writeback
+ 434000: system.cpu.iew: 434000/68/writeback
+ 434500: system.cpu.iew: 434500/79/issue
+ 434500: system.cpu.iew: 434500/80/issue
+ 434500: system.cpu.iew: 434500/81/issue
+ 434500: system.cpu.iew: 434500/75/execute(start)
+ 434500: system.cpu.iew: 434500/69/execute(start)
+ 434500: system.cpu.iew: 434500/69/writeback
+ 435000: system.cpu.iew: 435000/82/issue
+ 435000: system.cpu.iew: 435000/80/execute(start)
+ 435000: system.cpu.iew: 435000/70/execute(start)
+ 435000: system.cpu.iew: 435000/80/writeback
+ 435000: system.cpu.iew: 435000/70/writeback
+ 435500: system.cpu.iew: 435500/71/execute(start)
+ 435500: system.cpu.iew: 435500/71/writeback
+ 436000: system.cpu.iew: 436000/72/execute(start)
+ 436000: system.cpu.iew: 436000/72/writeback
+ 495000: system.cpu.fetch: 495000/83/fetch/  mov   r5, r2
+ 495000: system.cpu.fetch: 495000/84/fetch/  mov   lr, r2
+ 495000: system.cpu.fetch: 495000/85/fetch/  mov   r4, r2
+ 495500: system.cpu.fetch: 495500/86/fetch/  mov   r12, r2
+ 496000: system.cpu.fetch: 496000/87/fetch/  str   r9, [sp, #92]
+ 496000: system.cpu.fetch: 496000/88/fetch/  ldr   r9, [r1, #8]
+ 496000: system.cpu.fetch: 496000/89/fetch/  ldr   fp, [pc, #1112]
+ 496500: system.cpu.fetch: 496500/90/fetch/  str   r9, [sp, #48]
+ 496500: system.cpu.decode: 496500/83/decode
+ 496500: system.cpu.decode: 496500/84/decode
+ 496500: system.cpu.decode: 496500/85/decode
+ 497000: system.cpu.fetch: 497000/91/fetch/  ldr   r9, [r1, #16]
+ 497000: system.cpu.fetch: 497000/92/fetch/  ldr   r7, [pc, #1104]
+ 497000: system.cpu.fetch: 497000/93/fetch/  str   r9, [sp, #80]
+ 497000: system.cpu.decode: 497000/86/decode
+ 497500: system.cpu.fetch: 497500/94/fetch/  ldr   r9, [r1, #20]
+ 497500: system.cpu.decode: 497500/87/decode
+ 497500: system.cpu.decode: 497500/88/decode
+ 497500: system.cpu.decode: 497500/89/decode
+ 498000: system.cpu.fetch: 498000/95/fetch/  ldr   r6, [pc, #1096]
+ 498000: system.cpu.fetch: 498000/96/fetch/  str   r9, [sp, #84]
+ 498000: system.cpu.fetch: 498000/97/fetch/  ldr   r9, [fp, #0]
+ 498000: system.cpu.decode: 498000/90/decode
+ 498000: system.cpu.iew: 498000/83/issue
+ 498000: system.cpu.iew: 498000/84/issue
+ 498000: system.cpu.iew: 498000/85/issue
+ 498500: system.cpu.fetch: 498500/98/fetch/  ldr   r10, [pc, #1088]
+ 498500: system.cpu.decode: 498500/91/decode
+ 498500: system.cpu.decode: 498500/92/decode
+ 498500: system.cpu.decode: 498500/93/decode
+ 498500: system.cpu.iew: 498500/86/issue
+ 498500: system.cpu.iew: 498500/83/execute(start)
+ 498500: system.cpu.iew: 498500/84/execute(start)
+ 498500: system.cpu.iew: 498500/83/writeback
+ 498500: system.cpu.iew: 498500/84/writeback
+ 499000: system.cpu.decode: 499000/94/decode
+ 499000: system.cpu.iew: 499000/87/issue
+ 499000: system.cpu.iew: 499000/88/issue
+ 499000: system.cpu.iew: 499000/89/issue
+ 499000: system.cpu.iew: 499000/85/execute(start)
+ 499000: system.cpu.iew: 499000/86/execute(start)
+ 499000: system.cpu.iew: 499000/85/writeback
+ 499000: system.cpu.iew: 499000/86/writeback
+ 499500: system.cpu.decode: 499500/95/decode
+ 499500: system.cpu.decode: 499500/96/decode
+ 499500: system.cpu.decode: 499500/97/decode
+ 499500: system.cpu.iew: 499500/90/issue
+ 499500: system.cpu.iew: 499500/59/writeback
+ 500000: system.cpu.decode: 500000/98/decode
+ 500000: system.cpu.iew: 500000/91/issue
+ 500000: system.cpu.iew: 500000/92/issue
+ 500000: system.cpu.iew: 500000/93/issue
+ 500000: system.cpu.iew: 500000/89/execute(start)
+ 500500: system.cpu.iew: 500500/94/issue
+ 500500: system.cpu.iew: 500500/61/execute(start)
+ 500500: system.cpu.iew: 500500/74/writeback
+ 500500: system.cpu.iew: 500500/61/writeback
+ 500500: system.cpu.commit: 500500/59/commit
+ 500500: system.cpu.commit: 500500/60/commit
+ 501000: system.cpu.iew: 501000/95/issue
+ 501000: system.cpu.iew: 501000/96/issue
+ 501000: system.cpu.iew: 501000/97/issue
+ 501000: system.cpu.iew: 501000/92/execute(start)
+ 501000: system.cpu.iew: 501000/75/writeback
+ 501000: system.cpu.iew: 501000/89/writeback
+ 501500: system.cpu.iew: 501500/98/issue
+ 501500: system.cpu.iew: 501500/76/execute(start)
+ 501500: system.cpu.commit: 501500/61/commit
+ 501500: system.cpu.commit: 501500/62/commit
+ 501500: system.cpu.commit: 501500/63/commit
+ 501500: system.cpu.commit: 501500/64/commit
+ 501500: system.cpu.commit: 501500/65/commit
+ 501500: system.cpu.commit: 501500/66/commit
+ 501500: system.cpu.commit: 501500/67/commit
+ 501500: system.cpu.commit: 501500/68/commit
+ 502000: system.cpu.iew: 502000/79/execute(start)
+ 502000: system.cpu.iew: 502000/92/writeback
+ 502000: system.cpu.commit: 502000/69/commit
+ 502000: system.cpu.commit: 502000/70/commit
+ 502000: system.cpu.commit: 502000/71/commit
+ 502000: system.cpu.commit: 502000/72/commit
+ 502000: system.cpu.commit: 502000/73/commit
+ 502000: system.cpu.commit: 502000/74/commit
+ 502000: system.cpu.commit: 502000/75/commit
+ 502500: system.cpu.iew: 502500/82/execute(start)
+ 503000: system.cpu.iew: 503000/88/execute(start)
+ 503000: system.cpu.iew: 503000/79/writeback
+ 503500: system.cpu.iew: 503500/91/execute(start)
+ 503500: system.cpu.iew: 503500/82/writeback
+ 504000: system.cpu.iew: 504000/94/execute(start)
+ 504000: system.cpu.iew: 504000/81/execute(start)
+ 504000: system.cpu.iew: 504000/88/writeback
+ 504000: system.cpu.iew: 504000/81/writeback
+ 504500: system.cpu.iew: 504500/95/execute(start)
+ 504500: system.cpu.iew: 504500/87/execute(start)
+ 504500: system.cpu.iew: 504500/87/writeback
+ 505000: system.cpu.iew: 505000/97/execute(start)
+ 505000: system.cpu.iew: 505000/90/execute(start)
+ 505000: system.cpu.iew: 505000/90/writeback
+ 505500: system.cpu.iew: 505500/98/execute(start)
+ 562000: system.cpu.fetch: 562000/99/fetch/  str   r9, [sp, #76]
+ 562000: system.cpu.fetch: 562000/100/fetch/  ldr   r9, [r7, #0]
+ 562000: system.cpu.fetch: 562000/101/fetch/  str   r2, [sp, #68]
+ 562500: system.cpu.fetch: 562500/102/fetch/  str   r9, [sp, #64]
+ 563000: system.cpu.fetch: 563000/103/fetch/  ldr   r9, [r6, #0]
+ 563000: system.cpu.fetch: 563000/104/fetch/  str   r2, [sp, #60]
+ 563000: system.cpu.fetch: 563000/105/fetch/  str   r9, [sp, #72]

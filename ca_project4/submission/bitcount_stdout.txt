@@ -1,0 +1,25 @@
+gem5 Simulator System.  http://gem5.org
+gem5 is copyrighted software; use the --copyright option for details.
+
+gem5 compiled May 30 2022 11:46:56
+gem5 started May 30 2022 12:42:00
+gem5 executing on monkeyking-VirtualBox
+command line: ./build/ARM/gem5.opt -re -d project4/ --stdout-file=bitcount_stdout.txt --stderr-file=stderr.txt --stats-file=stats.txt --debug-file=bitcount_debug.txt --debug-flags=CA_PROJ4 configs/example/se.py --cpu-type=arm_detailed -c /home/monkeyking/bench/bitcnts --caches --l2cache -o 10
+
+Global frequency set at 1000000000000 ticks per second
+**** REAL SIMULATION ****
+info: Entering event queue @ 0.  Starting simulation...
+info: Increasing stack size by one page.
+Bit counter algorithm benchmark
+
+Optimized 1 bit/loop counter          > Time:   0.000 sec.; Bits: 162
+Ratko's mystery algorithm             > Time:   0.000 sec.; Bits: 155
+Recursive bit count by nybbles        > Time:   0.000 sec.; Bits: 142
+Non-recursive bit count by nybbles    > Time:   0.000 sec.; Bits: 141
+Non-recursive bit count by bytes (BW) > Time:   0.000 sec.; Bits: 162
+Non-recursive bit count by bytes (AR) > Time:   0.000 sec.; Bits: 147
+Shift and count bits                  > Time:   0.000 sec.; Bits: 143
+
+Best  > Recursive bit count by nybbles
+Worst > Shift and count bits
+Exiting @ tick 63737000 because target called exit()
